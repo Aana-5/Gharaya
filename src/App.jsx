@@ -9,6 +9,7 @@ import { PrivacyPolicy } from './components/PrivacyPolicy';
 import { ReturnRefund } from './components/ReturnRefund';
 import TermsAndConditions from './components/Terms&Conditions';
 import { Header } from './components/Header';
+import TestComp from './components/TestComp';
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
                 <Route path="/privacypolicy" element={<PrivacyPolicy/>} />
                 <Route path="/refund" element={<ReturnRefund/>} />
                 <Route path="/terms&conditions" element={<TermsAndConditions />} />
+                <Route path="/temp" element={<TestComp />} />
             </Routes>
         </>
     );
