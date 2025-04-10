@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import FAQ from './components/FAQ';
 import ContactUs from './components/ContactUs';
 import TermsAndConditions from './components/Terms&Conditions';
+import TestComp from './components/TestComp';
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                 <Route path="/faq" element={<FAQ />} />
                 <Route path="/contact" element={<ContactUs />} />
                 <Route path="/terms&conditions" element={<TermsAndConditions />} />
+                <Route path="/temp" element={<TestComp />} />
             </Routes>
         </>
     );
