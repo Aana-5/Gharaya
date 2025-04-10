@@ -1,27 +1,9 @@
 import React from 'react';
 import { Box, Typography, IconButton, Link, Grid, FormControl, InputLabel, OutlinedInput, Button } from '@mui/material';
 import LocationPinIcon from '@mui/icons-material/LocationPin';
+import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
 
 const ContactUs = () => {
-
-    const inputStyles = {
-        height: '36px',
-        borderRadius: '29px',
-        backgroundColor: '#27A84A',
-        border: '1px solid #27A84A',
-        color: '#fff',
-        paddingX: 2,
-        '& input': {
-          padding: '8px 0',
-        },
-      };
-
-      const labelStyles = {
-        mb: 1,
-        color: '#fff',
-        fontSize: '1.1rem',
-        fontWeight: '600',
-      };
 
     const animatedLinkStyle = {
         fontFamily: "'Poppins', sans-serif",
@@ -55,6 +37,16 @@ const ContactUs = () => {
         "&:hover": {
             transform: "scale(1.2)",
             color: "#fff"
+        }
+    };
+
+    const bulbIconStyles = {
+        color: "#fff",
+        fontSize: 28,
+        transition: "transform 0.3s ease",
+        "&:hover": {
+            transform: "scale(1.2)",
+            color: "#f9e03a"
         }
     };
 
@@ -144,7 +136,7 @@ const ContactUs = () => {
                         maxWidth: '100%',
                     }}
                 >
-                    <Typography variant="body1" sx={{ fontSize: { xs: '0.95rem', sm: '1rem' } }}>
+                    <Typography variant="body1" sx={{ fontSize: { xs: '1.1rem', sm: '1.5rem' } }}>
                         <strong>Desimati Agri Technologies And Services Private Limited</strong><br /><br />
                         <strong>Corporate Address</strong><br />
                         Plot No. 380, JDA Scheme 14, Vijay Nagar Road,<br />
@@ -152,13 +144,13 @@ const ContactUs = () => {
                     </Typography>
 
                     <Box mt={3}>
-                        <Typography variant="body1"><strong>Mobile</strong></Typography>
+                        <Typography variant="body1" sx={{ fontSize: { xs: '1.1rem', sm: '1.5rem' } }}><strong>Mobile</strong></Typography>
                         <Link
                             href="tel:+916261497479"
                             underline="hover"
                             sx={{
                                 ...animatedLinkStyle,
-                                fontSize: { xs: '0.9rem', sm: '1rem' },
+                                fontSize: { xs: '1rem', sm: '1.2rem' },
                                 mt: 0.5
                             }}
                         >
@@ -167,13 +159,13 @@ const ContactUs = () => {
                     </Box>
 
                     <Box mt={3}>
-                        <Typography variant="body1"><strong>Email</strong></Typography>
+                        <Typography variant="body1" sx={{ fontSize: { xs: '1.1rem', sm: '1.5rem' } }}><strong>Email</strong></Typography>
                         <Link
                             href="mailto:admin@desimati.com"
                             underline="hover"
                             sx={{
                                 ...animatedLinkStyle,
-                                fontSize: { xs: '0.9rem', sm: '1rem' },
+                                fontSize: { xs: '1rem', sm: '1.2rem' },
                                 mt: 0.5
                             }}
                         >
@@ -225,99 +217,176 @@ const ContactUs = () => {
                     }}
                 />
 
-                <Grid container spacing={3}>
-                    {/* Full Name */}
-                    <Grid item xs={12} sm={6}>
-                        <FormControl fullWidth variant="outlined">
-                            <InputLabel
-                                shrink
-                                htmlFor="full-name"
-                                sx={labelStyles}
-                            >
+                <Box
+                    sx={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: 1,
+                        mb: 2,
+                    }}
+                >
+                    <IconButton
+                        href="#"
+                        aria-label="Location"
+                        size="large"
+                        sx={bulbIconStyles}
+                    >
+                        <TipsAndUpdatesIcon fontSize='inherit' />
+                    </IconButton>
+                    <Typography
+                        sx={{
+                            fontFamily: 'Montserrat, sans-serif',
+                            fontSize: '1.5rem',
+                            color: '#fff',
+                            fontWeight: 100,
+                        }}
+                    >
+                        Please Fillout your details
+                    </Typography>
+                </Box>
+
+                {/* Ok */}
+                <Box
+                    component="form"
+                    noValidate
+                    autoComplete="off"
+                    sx={{
+                        backgroundColor: '#fff',
+                        padding: { xs: '1rem', sm: '1.5rem', md: '2rem' },
+                        borderRadius: '0.75rem',
+                        boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+                        fontFamily: 'Montserrat, sans-serif',
+                        color: '#000',
+                        lineHeight: 1.8,
+                        maxWidth: '100%',
+                    }}
+                >
+                    <Grid container spacing={2} columnGap={13}>
+                        {/* Full Name */}
+                        <Grid item xs={12} sm={6}>
+                            <label htmlFor="full-name" style={{ display: 'inline-block', marginBottom: '.5rem' }}>
                                 Full Name
-                            </InputLabel>
-                            <OutlinedInput
+                            </label>
+                            <input
+                                type="text"
                                 id="full-name"
-                                sx={inputStyles}
+                                className="form-control"
+                                style={{
+                                    background: '#39B55A',
+                                    borderRadius: '29px',
+                                    border: '1px solid #39B55A',
+                                    color: '#fff',
+                                    display: 'block',
+                                    width: '100%',
+                                    padding: '.375rem .75rem',
+                                    fontSize: '1rem',
+                                    fontWeight: 400,
+                                    lineHeight: 1.5,
+                                }}
                             />
-                        </FormControl>
-                    </Grid>
+                        </Grid>
 
-                    {/* Mobile Number */}
-                    <Grid item xs={12} sm={6}>
-                        <FormControl fullWidth variant="outlined">
-                            <InputLabel
-                                shrink
-                                htmlFor="mobile"
-                                sx={labelStyles}
-                            >
+                        {/* Mobile Number */}
+                        <Grid item xs={12} sm={6}>
+                            <label htmlFor="mobile" style={{ display: 'inline-block', marginBottom: '.5rem' }}>
                                 Mobile Number
-                            </InputLabel>
-                            <OutlinedInput
+                            </label>
+                            <input
+                                type="tel"
                                 id="mobile"
-                                sx={inputStyles}
+                                className="form-control"
+                                style={{
+                                    background: '#39B55A',
+                                    borderRadius: '29px',
+                                    border: '1px solid #39B55A',
+                                    color: '#fff',
+                                    display: 'block',
+                                    width: '100%',
+                                    padding: '.375rem .75rem',
+                                    fontSize: '1rem',
+                                    fontWeight: 400,
+                                    lineHeight: 1.5,
+                                }}
                             />
-                        </FormControl>
-                    </Grid>
+                        </Grid>
 
-                    {/* Email ID */}
-                    <Grid item xs={12} sm={6}>
-                        <FormControl fullWidth variant="outlined">
-                            <InputLabel
-                                shrink
-                                htmlFor="email"
-                                sx={labelStyles}
-                            >
+                        {/* Email ID */}
+                        <Grid item xs={12} sm={6}>
+                            <label htmlFor="email" style={{ display: 'inline-block', marginBottom: '.5rem' }}>
                                 Email ID
-                            </InputLabel>
-                            <OutlinedInput
+                            </label>
+                            <input
+                                type="email"
                                 id="email"
-                                sx={inputStyles}
+                                className="form-control"
+                                style={{
+                                    background: '#39B55A',
+                                    borderRadius: '29px',
+                                    border: '1px solid #39B55A',
+                                    color: '#fff',
+                                    display: 'block',
+                                    width: '100%',
+                                    padding: '.375rem .75rem',
+                                    fontSize: '1rem',
+                                    fontWeight: 400,
+                                    lineHeight: 1.5,
+                                }}
                             />
-                        </FormControl>
-                    </Grid>
+                        </Grid>
 
-                    {/* Queries */}
-                    <Grid item xs={12} sm={6}>
-                        <FormControl fullWidth variant="outlined">
-                            <InputLabel
-                                shrink
-                                htmlFor="queries"
-                                sx={labelStyles}
-                            >
+                        {/* Queries */}
+                        <Grid item xs={12} sm={6}>
+                            <label htmlFor="queries" style={{ display: 'inline-block', marginBottom: '.5rem' }}>
                                 Queries
-                            </InputLabel>
-                            <OutlinedInput
+                            </label>
+                            <input
+                                type="text"
                                 id="queries"
-                                sx={inputStyles}
+                                className="form-control"
+                                style={{
+                                    background: '#39B55A',
+                                    borderRadius: '29px',
+                                    border: '1px solid #39B55A',
+                                    color: '#fff',
+                                    display: 'block',
+                                    width: '100%',
+                                    padding: '.375rem .75rem',
+                                    fontSize: '1rem',
+                                    fontWeight: 400,
+                                    lineHeight: 1.5,
+                                }}
                             />
-                        </FormControl>
-                    </Grid>
+                        </Grid>
 
-                    {/* Message */}
-                    <Grid item xs={12}>
-                        <FormControl fullWidth variant="outlined">
-                            <InputLabel
-                                shrink
-                                htmlFor="message"
-                                sx={labelStyles}
-                            >
+                        {/* Message */}
+                        <Grid item xs={12}>
+                            <label htmlFor="message" style={{ display: 'inline-block', marginBottom: '.5rem' }}>
                                 Message
-                            </InputLabel>
-                            <OutlinedInput
+                            </label>
+                            <textarea
                                 id="message"
-                                multiline
                                 rows={4}
-                                sx={inputStyles}
+                                className="form-control"
+                                style={{
+                                    background: '#39B55A',
+                                    borderRadius: '20px',
+                                    border: '1px solid #39B55A',
+                                    color: '#fff',
+                                    display: 'block',
+                                    width: '100%',
+                                    padding: '12px 16px',
+                                    fontSize: '1rem',
+                                    fontWeight: 400,
+                                    lineHeight: 1.5,
+                                }}
                             />
-                        </FormControl>
+                        </Grid>
                     </Grid>
 
                     {/* Submit Button */}
-                    <Grid item xs={12}>
+                    <Box mt={3} display="flex" justifyContent="center">
                         <Button
                             variant="contained"
-                            size="large"
                             sx={{
                                 backgroundColor: '#FFD95A',
                                 color: '#fff',
@@ -330,10 +399,10 @@ const ContactUs = () => {
                                 },
                             }}
                         >
-                            Send Message
+                            Submit
                         </Button>
-                    </Grid>
-                </Grid>
+                    </Box>
+                </Box>
             </Box>
         </Box>
     );
