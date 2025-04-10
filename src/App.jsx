@@ -7,17 +7,21 @@ import ContactUs from './components/ContactUs';
 import { About } from './components/About';
 import { PrivacyPolicy } from './components/PrivacyPolicy';
 import { ReturnRefund } from './components/ReturnRefund';
+import TermsAndConditions from './components/Terms&Conditions';
+import { Header } from './components/Header';
 
 function App() {
     return (
         <>
             <Routes>
-                <Route path="/" element={<Footer />} />
+                {/* <Route path="/" element={<Header/>} /> */}
+                <Route path="/" element={<Footer/>} />
                 <Route path="/faq" element={<FAQ />} />
                 <Route path="/contact" element={<ContactUs />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/privacypolicy" element={<PrivacyPolicy/>} />
                 <Route path="/refund" element={<ReturnRefund/>} />
+                <Route path="/terms&conditions" element={<TermsAndConditions />} />
             </Routes>
         </>
     );

@@ -5,8 +5,6 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { useTheme } from "@mui/material/styles";
 import { Link as RouterLink } from 'react-router-dom';
-import { Header } from "./Header";
-
 
 const Footer = () => {
 
@@ -50,9 +48,10 @@ const Footer = () => {
     };
 
 
-    return (
+    return (<>
         <Box sx={{ height: "100vh", display: "flex", flexDirection: "column", }}>
-            <Header/>
+            </Box>
+        // <Box sx={{ height: "100vh", display: "flex", flexDirection: "column", }}>
             <Box
                 sx={{
                     position: "relative",
@@ -220,7 +219,6 @@ const Footer = () => {
                                     FAQs
                                 </Link>
                             </Grid>
-                            <Grid item><Link href="#" underline="hover" color="#fff" sx={animatedLinkStyle}>Why Gharaya.com</Link></Grid>
                         </Box>
                     </Grid>
 
@@ -251,10 +249,9 @@ const Footer = () => {
                                     FAQs
                                 </Link>
                             </Grid>
-                            <Grid item><Link href="#" underline="hover" color="#fff" sx={animatedLinkStyle}>Terms & Conditions</Link></Grid>
+                            <Grid item><Link component={RouterLink} to="/terms&conditions" underline="hover" color="#fff" sx={animatedLinkStyle}>Terms & Conditions</Link></Grid>
                             <Grid item><Link href="#" underline="hover" color="#fff" sx={animatedLinkStyle}>Privacy Policy</Link></Grid>
                             <Grid item><Link href="#" underline="hover" color="#fff" sx={animatedLinkStyle}>Refund Policy</Link></Grid>
-                            <Grid item><Link href="#" underline="hover" color="#fff" sx={animatedLinkStyle}>Shipping Policy</Link></Grid>
                         </Box>
                     </Grid>
 
@@ -287,7 +284,8 @@ const Footer = () => {
                     </Typography>
                 </Box>
             </Box>
-        </Box>
+        // </Box>
+        </>
     );
 };
 

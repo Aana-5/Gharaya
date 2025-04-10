@@ -1,6 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Header } from "./Header";
+import Footer from "./Footer";
 
 export const PrivacyPolicy = () => {
   return (
@@ -92,6 +93,7 @@ export const PrivacyPolicy = () => {
         </div>
       </div>
     </div>
+    <Footer/>
     </> 
   );
 };
