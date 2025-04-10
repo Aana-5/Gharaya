@@ -8,6 +8,8 @@ import {
   Box,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { Header } from "./Header";
+import Footer from "./Footer";
 
 const faqs = [
   {
@@ -40,6 +42,7 @@ const faqs = [
 const FAQ = () => {
   return (
     <Box>
+      <Header/>
       <Box
         component="img"
         src="../src/assets/images/main_image.jpg"
@@ -68,6 +71,7 @@ const FAQ = () => {
           </Accordion>
         ))}
       </Container>
+      <Footer/>
     </Box>
   );
 };

@@ -49,9 +49,9 @@ const Footer = () => {
 
 
     return (<>
-        <Box sx={{ height: "100vh", display: "flex", flexDirection: "column", }}>
+        {/* <Box sx={{ height: "100vh", display: "flex", flexDirection: "column", }}>
             </Box>
-        // <Box sx={{ height: "100vh", display: "flex", flexDirection: "column", }}>
+        // <Box sx={{ height: "100vh", display: "flex", flexDirection: "column", }}> */}
             <Box
                 sx={{
                     position: "relative",
@@ -196,7 +196,7 @@ const Footer = () => {
                         </Typography>
                         <Box display="flex" flexDirection="column" gap={1}>
                             <Grid item><Link href="#" underline="hover" color="#fff" sx={animatedLinkStyle}>Home</Link></Grid>
-                            <Grid item><Link href="#" underline="hover" color="#fff" sx={animatedLinkStyle}>About Us</Link></Grid>
+                            <Grid item><Link href="/about" underline="hover" color="#fff" sx={animatedLinkStyle}>About Us</Link></Grid>
                             <Grid item>
                                 <Link
                                     component={RouterLink}
@@ -250,8 +250,8 @@ const Footer = () => {
                                 </Link>
                             </Grid>
                             <Grid item><Link component={RouterLink} to="/terms&conditions" underline="hover" color="#fff" sx={animatedLinkStyle}>Terms & Conditions</Link></Grid>
-                            <Grid item><Link href="#" underline="hover" color="#fff" sx={animatedLinkStyle}>Privacy Policy</Link></Grid>
-                            <Grid item><Link href="#" underline="hover" color="#fff" sx={animatedLinkStyle}>Refund Policy</Link></Grid>
+                            <Grid item><Link href="/privacypolicy" underline="hover" color="#fff" sx={animatedLinkStyle}>Privacy Policy</Link></Grid>
+                            <Grid item><Link href="/refund" underline="hover" color="#fff" sx={animatedLinkStyle}>Refund Policy</Link></Grid>
                         </Box>
                     </Grid>
 
@@ -284,7 +284,7 @@ const Footer = () => {
                     </Typography>
                 </Box>
             </Box>
-        // </Box>
+        {/* // </Box> */}
         </>
     );
 };
