@@ -327,8 +327,8 @@ function TermsAndConditions() {
                 }}>
                     Thank you for choosing Gharaya for your fresh grocery needs!
                 </Typography>
+                <Footer/>
             </Box>
-            <Footer/>
         </>
     );
 }
