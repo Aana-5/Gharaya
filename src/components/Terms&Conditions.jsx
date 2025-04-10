@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Box, Typography, Grid, Link } from '@mui/material';
+import Footer from './Footer';
 
 const subheading = {
     fontSize: { xs: '1.3rem', sm: '1.6rem' },
@@ -327,7 +328,7 @@ function TermsAndConditions() {
                     Thank you for choosing Gharaya for your fresh grocery needs!
                 </Typography>
             </Box>
-
+            <Footer/>
         </>
     );
 }

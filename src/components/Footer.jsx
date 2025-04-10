@@ -49,7 +49,7 @@ const Footer = () => {
 
 
     return (
-        <Box sx={{ height: "100vh", display: "flex", flexDirection: "column", }}>
+        // <Box sx={{ height: "100vh", display: "flex", flexDirection: "column", }}>
             <Box
                 sx={{
                     position: "relative",
@@ -217,7 +217,6 @@ const Footer = () => {
                                     FAQs
                                 </Link>
                             </Grid>
-                            <Grid item><Link href="#" underline="hover" color="#fff" sx={animatedLinkStyle}>Why Gharaya.com</Link></Grid>
                         </Box>
                     </Grid>
 
@@ -251,7 +250,6 @@ const Footer = () => {
                             <Grid item><Link component={RouterLink} to="/terms&conditions" underline="hover" color="#fff" sx={animatedLinkStyle}>Terms & Conditions</Link></Grid>
                             <Grid item><Link href="#" underline="hover" color="#fff" sx={animatedLinkStyle}>Privacy Policy</Link></Grid>
                             <Grid item><Link href="#" underline="hover" color="#fff" sx={animatedLinkStyle}>Refund Policy</Link></Grid>
-                            <Grid item><Link href="#" underline="hover" color="#fff" sx={animatedLinkStyle}>Shipping Policy</Link></Grid>
                         </Box>
                     </Grid>
 
@@ -284,7 +282,7 @@ const Footer = () => {
                     </Typography>
                 </Box>
             </Box>
-        </Box>
+        // </Box>
     );
 };
 
