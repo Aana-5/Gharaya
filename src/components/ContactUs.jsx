@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, IconButton, Link, Grid, FormControl, InputLabel, OutlinedInput, Button } from '@mui/material';
+import { Box, Typography, IconButton, Link, Grid,  Button } from '@mui/material';
 import LocationPinIcon from '@mui/icons-material/LocationPin';
 import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
 
@@ -245,7 +245,6 @@ const ContactUs = () => {
                     </Typography>
                 </Box>
 
-                {/* Ok */}
                 <Box
                     component="form"
                     noValidate
