@@ -68,8 +68,18 @@ function TermsAndConditions() {
                     maxWidth: '100%',
                 }}
             >
+                <Box
+                        component="img"
+                        src="../src/assets/images/T&C.jpg"
+                        alt="Fruits Puzzle Image"
+                        sx={{
+                          height: 350,
+                          width: '100%',
+                          objectFit: "cover",
+                        }}
+                      />
                 <Typography variant="h4" sx={{
-                    fontWeight: 'bold', marginBottom: 3, fontFamily: 'Candara', fontSize: { xs: '1.8rem', sm: '2.4rem' },
+                    marginTop: 4, fontWeight: 'bold', marginBottom: 3, fontFamily: 'Candara', fontSize: { xs: '1.8rem', sm: '2.4rem' },
                     fontWeight: 'bold',
                     marginBottom: '1rem',
                     textAlign: 'center',
