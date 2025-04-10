@@ -194,7 +194,6 @@ const ContactUs = () => {
                 <Typography
                     variant="h4"
                     sx={{
-                        fontFamily: 'Montserrat, sans-serif',
                         fontWeight: 500,
                         fontSize: '2.188rem',
                         color: '#fff',

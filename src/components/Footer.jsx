@@ -248,7 +248,7 @@ const Footer = () => {
                                     FAQs
                                 </Link>
                             </Grid>
-                            <Grid item><Link href="#" underline="hover" color="#fff" sx={animatedLinkStyle}>Terms & Conditions</Link></Grid>
+                            <Grid item><Link component={RouterLink} to="/terms&conditions" underline="hover" color="#fff" sx={animatedLinkStyle}>Terms & Conditions</Link></Grid>
                             <Grid item><Link href="#" underline="hover" color="#fff" sx={animatedLinkStyle}>Privacy Policy</Link></Grid>
                             <Grid item><Link href="#" underline="hover" color="#fff" sx={animatedLinkStyle}>Refund Policy</Link></Grid>
                             <Grid item><Link href="#" underline="hover" color="#fff" sx={animatedLinkStyle}>Shipping Policy</Link></Grid>
