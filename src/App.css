@@ -40,3 +40,63 @@
 .read-the-docs {
   color: #888;
 }
+
+
+/*  This is header CSS */
+.headrshadow {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.custom-card {
+  max-width: 10rem;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* This is About css */
+.div-box {
+  width: 100%;
+  max-width: 230px;
+  height: auto;
+  aspect-ratio: 1 / 1; /* maintains box shape */
+  padding: 1rem;
+  border-radius: 1px 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid green;
+  box-sizing: border-box;
+}
+
+.div-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .div-box {
+    max-width: 180px;
+    border-radius: 1px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .div-box {
+    max-width: 100%;
+    border-radius: 1px 20px;
+  }
+}
+
+
+
+.icons{
+  color: green;
+  margin: 5px;
+ padding: 15px;
+ padding-left:60px;
+}
+
+

@@ -5,6 +5,8 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { useTheme } from "@mui/material/styles";
 import { Link as RouterLink } from 'react-router-dom';
+import { Header } from "./Header";
+
 
 const Footer = () => {
 
@@ -50,6 +52,7 @@ const Footer = () => {
 
     return (
         <Box sx={{ height: "100vh", display: "flex", flexDirection: "column", }}>
+            <Header/>
             <Box
                 sx={{
                     position: "relative",
