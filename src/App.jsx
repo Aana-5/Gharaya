@@ -1,21 +1,31 @@
 import * as React from 'react';
-import { Route, Routes } from 'react-router-dom';
-import Footer from './components/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import FAQ from './components/FAQ';
 import ContactUs from './components/ContactUs';
+import { About } from './components/About';
+import { PrivacyPolicy } from './components/PrivacyPolicy';
+import { ReturnRefund } from './components/ReturnRefund';
 import TermsAndConditions from './components/Terms&Conditions';
+import { AppLayout } from './components/LayOuts/AppLayout';
 
 function App() {
-    return (
-        <>
-            <Routes>
-                <Route path="/" element={<Footer />} />
-                <Route path="/faq" element={<FAQ />} />
-                <Route path="/contact" element={<ContactUs />} />
-                <Route path="/terms&conditions" element={<TermsAndConditions />} />
-            </Routes>
-        </>
-    );
+    const router = createBrowserRouter([
+        {
+            path: "/",
+            element: <AppLayout />,
+            children: [
+                { path: "about", element: <About /> },
+                { path: "contact", element: <ContactUs /> },
+                { path: "privacypolicy", element: <PrivacyPolicy /> },
+                { path: "refund", element: <ReturnRefund /> },
+                { path: "faq", element: <FAQ /> },
+                { path: "terms&conditions", element: <TermsAndConditions /> },
+            ],
+        },
+    ]);
+
+    return <RouterProvider router={router} />;
 }
 
 export default App;
