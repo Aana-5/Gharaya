@@ -7,7 +7,7 @@ import Footer from "./Footer";
 export const About = () => {
   return (
    <div className="container-fluid">
-         <Header/>
+         {/* <Header/> */}
       {/* Hero Image */}
       <div className="row">
         <div className="col m-3 d-flex justify-content-center">
@@ -51,7 +51,7 @@ export const About = () => {
           { icon: "p-circle-fill", title: "Premium Quality Vegetables" },
           { icon: "map", title: "Origin Tracking" }
         ].map((item, index) => (
-          <div className="div-box col-6 col-md-3 m-auto p-5" key={index}>
+          <div className="div-box col-6 col-md-3 m-auto mt-4 p-5" key={index}>
               <h1 className="text-success">
                 <i className={`bi bi-${item.icon}`}></i>
               </h1>
@@ -131,7 +131,7 @@ export const About = () => {
           </p>
         </div>
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 };

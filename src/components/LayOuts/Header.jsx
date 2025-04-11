@@ -1,5 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link as RouterLink } from 'react-router-dom';
+import { Grid, Link } from "@mui/material";
 
 export const Header = () => {
   return (
@@ -7,11 +9,11 @@ export const Header = () => {
       {/* Top Bar */}
       <div className="row bg-success bg-gradient text-white py-2 px-3">
         <div className="col-12 col-md-6">
-          <h6 className="mb-0">Why Gharaya.Com</h6>
+          <h6 className="mt-3">Why Gharaya.Com</h6>
         </div>
         <div className="col-12 col-md-6 text-md-end">
           <h6 className="mb-0">
-           <a className="text-white text-decoration-none" href="/about">About Us</a>  | <a className="text-white text-decoration-none" href="mailto:admin@desimati.com">admin@desimati.com</a> | Contact Us
+          <Grid item><Link component={RouterLink} to="/about" underline="hover" color="#fff" >About Us</Link></Grid>  | <a className="text-white text-decoration-none" href="mailto:admin@desimati.com">admin@desimati.com</a> | <Grid item><Link component={RouterLink} to="/contact" underline="hover" color="#fff" >Contact Us</Link></Grid>
           </h6>
         </div>
       </div>

@@ -1,12 +1,12 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Header } from "./Header";
-import Footer from "./Footer";
+import { Header } from "./LayOuts/Header";
+import Footer from "./LayOuts/Footer";
 
 export const ReturnRefund = () => {
     return (
         <>
-            <Header />
+            {/* <Header /> */}
             <div className="container-fluid px-1 px-md-1 py-1">
                 <div className="row justify-content-center mb-4">
                     <div className="col-12 col-md-10">
@@ -95,7 +95,7 @@ export const ReturnRefund = () => {
                     </div>
                 </div>
             </div>
-            <Footer/>
+            {/* <Footer/> */}
         </>
     );
 };

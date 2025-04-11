@@ -42,7 +42,7 @@ const faqs = [
 const FAQ = () => {
   return (
     <Box>
-      <Header/>
+      {/* <Header/> */}
       <Box
         component="img"
         src="../src/assets/images/main_image.jpg"
@@ -71,7 +71,7 @@ const FAQ = () => {
           </Accordion>
         ))}
       </Container>
-      <Footer/>
+      {/* <Footer/> */}
     </Box>
   );
 };

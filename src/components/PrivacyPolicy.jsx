@@ -6,7 +6,7 @@ import Footer from "./Footer";
 export const PrivacyPolicy = () => {
   return (
     <>
-    <Header/>
+    {/* <Header/> */}
     <div className="container-fluid px-1 px-md-1 py-1">
       <div className="row justify-content-center mb-4">
         <div className="col-12 col-md-10">
@@ -93,7 +93,7 @@ export const PrivacyPolicy = () => {
         </div>
       </div>
     </div>
-    <Footer/>
+    {/* <Footer/> */}
     </> 
   );
 };
