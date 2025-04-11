@@ -49,7 +49,7 @@ export const Header = () => {
                 Categories
               </button>
               <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="/all">All</a></li>
+                <li><a className="dropdown-item" href="#">All</a></li>
                 <li><a className="dropdown-item" href="#">Vegetables</a></li>
                 <li><a className="dropdown-item" href="#">Leafy</a></li>
                 <li><a className="dropdown-item" href="#">Exotic Vegetable</a></li>

@@ -79,6 +79,7 @@ const ContactUs = () => {
                         fontFamily: 'Montserrat, sans-serif',
                         fontWeight: 100,
                         color: '#000',
+                        textAlign: 'left',
                     }}
                 >
                     Contact Us

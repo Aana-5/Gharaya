@@ -55,6 +55,7 @@ const Footer = () => {
                     color: "#fff",
                     p: 4,
                     mt: "auto",
+                    minHeight:"100vh",
                     overflow: "hidden",
                     "&::before": {
                         content: '""',

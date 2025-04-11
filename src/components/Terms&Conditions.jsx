@@ -8,6 +8,7 @@ const subheading = {
     marginBottom: '0.75rem',
     color: '#444',
     fontFamily: 'Candara',
+    textAlign: 'left',
 };
 
 const pointheading = {
@@ -17,6 +18,7 @@ const pointheading = {
     marginBottom: '0.75rem',
     color: '#444',
     fontFamily: 'Candara',
+    textAlign: 'left',
 };
 
 const subSubheading = {
@@ -26,6 +28,7 @@ const subSubheading = {
     marginBottom: '0.5rem',
     color: '#555',
     fontFamily: 'Candara',
+    textAlign: 'left',
 };
 
 const animatedLinkStyle = {
