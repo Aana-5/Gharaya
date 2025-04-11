@@ -5,23 +5,66 @@ import { Grid, Link } from "@mui/material";
 
 export const Header = () => {
   return (
-    <div className="container-fluid position-static">
+    <div className="container-fluid sticky-top bg-white z-3">
       {/* Top Bar */}
       <div className="row bg-success bg-gradient text-white py-2 px-3">
-        <div className="col-12 col-md-6">
-          <h6 className="mt-3">Why Gharaya.Com</h6>
+        {/* Left side: Why Gharaya.Com */}
+        <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-start align-items-center mb-2 mb-md-0 ps-md-4">
+          <h6 className="mb-0 text-center text-md-start">Why Gharaya.Com</h6>
         </div>
-        <div className="col-12 col-md-6 text-md-end">
-          <h6 className="mb-0">
-          <Grid item><Link component={RouterLink} to="/about" underline="hover" color="#fff" >About Us</Link></Grid>  | <a className="text-white text-decoration-none" href="mailto:admin@desimati.com">admin@desimati.com</a> | <Grid item><Link component={RouterLink} to="/contact" underline="hover" color="#fff" >Contact Us</Link></Grid>
-          </h6>
+
+        {/* Right side: About Us | Email | Contact Us */}
+        <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-end align-items-center flex-wrap gap-2 pe-md-4 text-center text-md-end">
+          <Grid item>
+            <Link
+              component={RouterLink}
+              to="/loginpage"
+              underline="hover"
+              color="#fff"
+              sx={{ fontSize: '0.9rem' }}
+            >
+              Login
+            </Link>
+          </Grid>
+          <span className="text-white">|</span>
+          <Grid item>
+            <Link
+              component={RouterLink}
+              to="/about"
+              underline="hover"
+              color="#fff"
+              sx={{ fontSize: '0.9rem' }}
+            >
+              About Us
+            </Link>
+          </Grid>
+          <span className="text-white">|</span>
+          <a
+            className="text-white text-decoration-none"
+            href="mailto:admin@desimati.com"
+            style={{ fontSize: '0.9rem' }}
+          >
+            admin@desimati.com
+          </a>
+          <span className="text-white">|</span>
+          <Grid item>
+            <Link
+              component={RouterLink}
+              to="/contact"
+              underline="hover"
+              color="#fff"
+              sx={{ fontSize: '0.9rem' }}
+            >
+              Contact Us
+            </Link>
+          </Grid>
         </div>
       </div>
 
       {/* Main Header */}
       <div className="headrshadow row rounded-bottom align-items-center py-3">
         {/* Left Side: Logo + Search */}
-        <div className="col-12 col-md-6">
+        <div className="col-12 col-md-6 mb-3 mb-md-0">
           <div className="d-flex align-items-center justify-content-center justify-content-md-start flex-wrap gap-3">
             <div className="custom-card shadow-sm p-2">
               <img src="../src/assets/images/gharayalogo.png" alt="Logo" className="img-fluid" style={{ maxHeight: "3.2rem" }} />
@@ -36,7 +79,7 @@ export const Header = () => {
         </div>
 
         {/* Right Side: Dropdowns + Icons */}
-        <div className="col-12 col-md-6 mt-4 mt-md-0">
+        <div className="col-12 col-md-6">
           <div className="d-flex justify-content-center justify-content-md-end align-items-center flex-wrap gap-3">
             {/* Categories Dropdown */}
             <div className="dropdown">
