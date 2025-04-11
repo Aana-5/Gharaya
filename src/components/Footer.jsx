@@ -49,7 +49,6 @@ const Footer = () => {
 
 
     return (
-        // <Box sx={{ height: "100vh", display: "flex", flexDirection: "column", }}>
             <Box
                 sx={{
                     position: "relative",
@@ -282,7 +281,6 @@ const Footer = () => {
                     </Typography>
                 </Box>
             </Box>
-        // </Box>
     );
 };
 
