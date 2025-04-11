@@ -9,6 +9,7 @@ const subheading = {
     color: '#444',
     fontFamily: 'Candara',
     textAlign: 'left',
+    paddingLeft: '6rem',
 };
 
 const pointheading = {
@@ -19,6 +20,7 @@ const pointheading = {
     color: '#444',
     fontFamily: 'Candara',
     textAlign: 'left',
+    paddingLeft: '6rem',
 };
 
 const subSubheading = {
@@ -29,6 +31,7 @@ const subSubheading = {
     color: '#555',
     fontFamily: 'Candara',
     textAlign: 'left',
+    paddingLeft: '6rem',
 };
 
 const animatedLinkStyle = {

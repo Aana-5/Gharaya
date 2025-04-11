@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Typography, IconButton, Link, Grid,  Button } from '@mui/material';
 import LocationPinIcon from '@mui/icons-material/LocationPin';
 import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
+import { Link as RouterLink } from 'react-router-dom';
 
 const ContactUs = () => {
 
@@ -105,7 +106,8 @@ const ContactUs = () => {
                     }}
                 >
                     <IconButton
-                        href="#"
+                    component={RouterLink}
+                        to="/contact"
                         aria-label="Location"
                         size="large"
                         sx={socialIconStyles}
@@ -226,7 +228,8 @@ const ContactUs = () => {
                     }}
                 >
                     <IconButton
-                        href="#"
+                    component={RouterLink}
+                        to='/contact'
                         aria-label="Location"
                         size="large"
                         sx={bulbIconStyles}

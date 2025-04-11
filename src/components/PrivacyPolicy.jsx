@@ -1,13 +1,37 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Header } from "./Header";
-import Footer from "./Footer";
+import { Link as RouterLink } from 'react-router-dom';
+import { Grid, Link } from "@mui/material";
+
+const animatedLinkStyle = {
+  fontFamily: 'Candara',
+  position: "relative",
+  display: "inline-block",
+  color: "#000",
+  textDecoration: "none",
+  transition: "color 0.3s ease",
+  "&::after": {
+      content: '""',
+      position: "absolute",
+      width: "0%",
+      height: "0.125rem",
+      left: 0,
+      bottom: 0,
+      backgroundColor: "#ffeb3b",
+      transition: "width 0.3s ease"
+  },
+  "&:hover": {
+      color: "#1e8c42",
+      "&::after": {
+          width: "100%"
+      }
+  }
+};
 
 export const PrivacyPolicy = () => {
   return (
     <>
-    {/* <Header/> */}
-    <div className="container-fluid px-1 px-md-1 py-1">
+    <div className="container-fluid" style={{fontFamily:'Candara'}}>
       <div className="row justify-content-center mb-4">
         <div className="col-12 col-md-10">
           <img
@@ -89,11 +113,10 @@ export const PrivacyPolicy = () => {
 
           <h3 className="mt-4">11. Contact Us</h3>
           <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
-          <h6><b>Email: ashish@desimati.com</b></h6>
+          <Grid item><Link href="mailto:ashish@desimati.com" underline="hover" color="#fff" sx={animatedLinkStyle}><b>ashish@desimati.com</b></Link><br /></Grid>
         </div>
       </div>
     </div>
-    {/* <Footer/> */}
     </> 
   );
 };

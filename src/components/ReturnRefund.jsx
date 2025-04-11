@@ -1,13 +1,37 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Header } from "./LayOuts/Header";
-import Footer from "./LayOuts/Footer";
+import { Link as RouterLink } from 'react-router-dom';
+import { Grid, Link } from "@mui/material";
+
+const animatedLinkStyle = {
+    fontFamily: 'Candara',
+    position: "relative",
+    display: "inline-block",
+    color: "#000",
+    textDecoration: "none",
+    transition: "color 0.3s ease",
+    "&::after": {
+        content: '""',
+        position: "absolute",
+        width: "0%",
+        height: "0.125rem",
+        left: 0,
+        bottom: 0,
+        backgroundColor: "#ffeb3b",
+        transition: "width 0.3s ease"
+    },
+    "&:hover": {
+        color: "#1e8c42",
+        "&::after": {
+            width: "100%"
+        }
+    }
+};
 
 export const ReturnRefund = () => {
     return (
         <>
-            {/* <Header /> */}
-            <div className="container-fluid px-1 px-md-1 py-1">
+            <div className="container-fluid" style={{fontFamily: 'Candara'}}>
                 <div className="row justify-content-center mb-4">
                     <div className="col-12 col-md-10">
                         <img
@@ -87,15 +111,14 @@ export const ReturnRefund = () => {
                         <p>If you have any questions about our return policy or need assistance,
                             please don’t hesitate to contact us at: </p>
                         <ul className="text">
-                            <li>Email : <b className="text-primary"> admin@desimati.com</b></li>
-                            <li>Phone : <b className="text-primary"> +91-6261497479</b></li>
+                            <Grid item>Email: <Link href="mailto:admin@desimati.com" underline="hover" color="#fff" sx={animatedLinkStyle}><b>admin@desimati.com</b></Link><br /></Grid>
+                            <Grid item>Phone: <Link href="tel:+916261497479" underline="hover" color="#fff" sx={animatedLinkStyle}><b>+91 - 6261497479</b></Link></Grid>
                         </ul>
                         <p>We appreciate your business and strive to ensure your satisfaction with every order.
                             Thank you for choosing Gharaya for your fresh produce needs!</p>
                     </div>
                 </div>
             </div>
-            {/* <Footer/> */}
         </>
     );
 };

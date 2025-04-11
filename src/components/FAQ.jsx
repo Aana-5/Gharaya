@@ -8,8 +8,6 @@ import {
   Box,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { Header } from "./Header";
-import Footer from "./Footer";
 
 const faqs = [
   {

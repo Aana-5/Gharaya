@@ -1,8 +1,5 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Header } from "./Header";
-import Footer from "./Footer";
-// import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export const About = () => {
   return (
