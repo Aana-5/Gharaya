@@ -8,6 +8,8 @@ import { PrivacyPolicy } from './components/PrivacyPolicy';
 import { ReturnRefund } from './components/ReturnRefund';
 import TermsAndConditions from './components/Terms&Conditions';
 import { AppLayout } from './components/LayOuts/AppLayout';
+import LoginPage from './components/LoginPage';
+import LoginWithOtp from './components/LoginWithOtp';
 
 function App() {
     const router = createBrowserRouter([
@@ -21,6 +23,8 @@ function App() {
                 { path: "refund", element: <ReturnRefund /> },
                 { path: "faq", element: <FAQ /> },
                 { path: "terms&conditions", element: <TermsAndConditions /> },
+                {path : "loginpage", element:<LoginPage/>},
+                {path: "loginwithotp", element:<LoginWithOtp/>},
             ],
         },
     ]);
