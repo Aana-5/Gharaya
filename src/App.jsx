@@ -9,6 +9,8 @@ import { ReturnRefund } from './components/ReturnRefund';
 import TermsAndConditions from './components/Terms&Conditions';
 import { AppLayout } from './components/LayOuts/AppLayout';
 import RegistrationForm from './components/RegistrationPage';
+import LoginPage from './components/LoginPage';
+import LoginWithOtp from './components/LoginWithOtp';
 
 function App() {
     const router = createBrowserRouter([
@@ -23,6 +25,8 @@ function App() {
                 { path: "faq", element: <FAQ /> },
                 { path: "terms&conditions", element: <TermsAndConditions /> },
                 { path: "registration", element: <RegistrationForm /> },
+                { path: "loginpage", element: <LoginPage /> },
+                { path: "loginwithotp", element: <LoginWithOtp /> },
             ],
         },
     ]);
