@@ -7,10 +7,9 @@ import Button from '@mui/joy/Button';
 import { Link as RouterLink } from 'react-router-dom';
 import { Grid, Link } from "@mui/material";
 
-
 export default function LoginWithOtp() {
   return (
-    <main>
+    <main style={{ overflowX: 'hidden' }}>
       <div className="row gap-2">
         <div className="col">
           <div className="d-flex align-items-center justify-content-center justify-content-md-center flex-wrap gap-3">
@@ -52,14 +51,14 @@ export default function LoginWithOtp() {
 
         <Button sx={{ mt: 1 /* margin top */ }}>Get OTP</Button>
         <Typography
-          endDecorator={<Link to="/sign-up">Register</Link>}
+          endDecorator={<Link href="/sign-up">Register</Link>}
           sx={{ fontSize: 'sm', alignSelf: 'center' }}
         >
           Don&apos;t have an account?
         </Typography>
 
         <Typography
-          endDecorator={<Link component={RouterLink}  to="/privacypolicy">Gharaya's Privacy Policy</Link>}
+          endDecorator={<Link href="">Gharaya's Privacy Policy</Link>}
           sx={{ fontSize: 'sm', alignSelf: 'center' }}
         >
           By continuing, you agree to
