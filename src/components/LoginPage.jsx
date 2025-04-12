@@ -9,10 +9,9 @@ import Button from '@mui/joy/Button';
 import { Link as RouterLink } from 'react-router-dom';
 import { Grid, Link } from "@mui/material";
 
-
 export default function LoginPage() {
   return (
-    <main>
+    <main style={{ overflowX: 'hidden' }}>
       <div className="row gap-2">
         <div className="col">
             <div className="d-flex align-items-center justify-content-center justify-content-md-center flex-wrap gap-3">
@@ -55,7 +54,7 @@ export default function LoginPage() {
 
         <Button sx={{ mt: 1 /* margin top */ }}>Continue</Button>
         <Typography
-          endDecorator={<Link href="/sign-up">Register</Link>}
+          endDecorator={<Link component={RouterLink} to="/registration" underline="hover" color="blue">Register</Link>}
           sx={{ fontSize: 'sm', alignSelf: 'center' }}
         >
           Don&apos;t have an account?

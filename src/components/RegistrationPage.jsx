@@ -70,7 +70,7 @@ const RegistrationPage = () => {
                         <Box sx={{ px: 1 }}>
                             <input
                                 type="text"
-                                placeholder="Enter your city"
+                                disabled
                                 style={{
                                     background: '#ffcf',
                                     borderRadius: '29px',
