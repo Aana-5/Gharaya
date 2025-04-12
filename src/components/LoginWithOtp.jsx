@@ -21,11 +21,10 @@ export default function LoginWithOtp() {
       <Sheet
         sx={{
           width: 400,
-          height: 350,
-          mx: 'auto', // margin left & right
-          my: 4, // margin top & bottom
-          py: 6, // padding top & bottom
-          px: 2, // padding left & right
+          mx: 'auto',
+          my: 4,
+          py: 6,
+          px: 2,
           display: 'flex',
           flexDirection: 'column',
           gap: 2,
@@ -41,10 +40,8 @@ export default function LoginWithOtp() {
         </div>
         <FormControl>
           <Input
-            // html input attribute
             name="email"
             type="email"
-            //   value="+91"
             placeholder="Enter Your Mobile "
           />
         </FormControl>
