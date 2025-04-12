@@ -22,7 +22,7 @@ export default function LoginWithOtp() {
       <Sheet
         sx={{
           width: 400,
-          height: 350,
+          height: 340,
           mx: 'auto', // margin left & right
           my: 4, // margin top & bottom
           py: 6, // padding top & bottom
@@ -52,14 +52,14 @@ export default function LoginWithOtp() {
 
         <Button sx={{ mt: 1 /* margin top */ }}>Get OTP</Button>
         <Typography
-          endDecorator={<Link href="/sign-up">Register</Link>}
+          endDecorator={<Link to="/sign-up">Register</Link>}
           sx={{ fontSize: 'sm', alignSelf: 'center' }}
         >
           Don&apos;t have an account?
         </Typography>
 
         <Typography
-          endDecorator={<Link href="">Gharaya's Privacy Policy</Link>}
+          endDecorator={<Link component={RouterLink}  to="/privacypolicy">Gharaya's Privacy Policy</Link>}
           sx={{ fontSize: 'sm', alignSelf: 'center' }}
         >
           By continuing, you agree to
