@@ -24,7 +24,7 @@ export default function LoginPage() {
       <Sheet
         sx={{
           width: 400,
-          height: 300,
+          height: 350,
           mx: 'auto', // margin left & right
           my: 4, // margin top & bottom
           py: 6, // padding top & bottom
@@ -58,6 +58,12 @@ export default function LoginPage() {
           sx={{ fontSize: 'sm', alignSelf: 'center' }}
         >
           Don&apos;t have an account?
+        </Typography>
+        <Typography
+          endDecorator={<Link component={RouterLink} to="/privacypolicy" underline="hover" color="blue">Gharaya's Privacy Policy</Link>}
+          sx={{ fontSize: 'sm', alignSelf: 'center' }}
+        >
+          By continuing, you agree to
         </Typography>
       </Sheet>
     </main>
