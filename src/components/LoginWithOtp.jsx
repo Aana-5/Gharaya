@@ -51,14 +51,14 @@ export default function LoginWithOtp() {
 
         <Button sx={{ mt: 1 /* margin top */ }}>Get OTP</Button>
         <Typography
-          endDecorator={<Link href="/sign-up">Register</Link>}
+          endDecorator={<Link component={RouterLink} to="/registration" underline="hover" color="blue">Register</Link>}
           sx={{ fontSize: 'sm', alignSelf: 'center' }}
         >
           Don&apos;t have an account?
         </Typography>
 
         <Typography
-          endDecorator={<Link href="">Gharaya's Privacy Policy</Link>}
+          endDecorator={<Link component={RouterLink}  to="/privacypolicy">Gharaya's Privacy Policy</Link>}
           sx={{ fontSize: 'sm', alignSelf: 'center' }}
         >
           By continuing, you agree to
